@@ -1,7 +1,7 @@
 FROM ghcr.io/foundry-rs/foundry:latest
 
 ARG PORT
-ENV PORT=${PORT:-80}
+ENV PORT=${PORT:-"80"}
 ARG MNEMONIC
 ENV MNEMONIC=${MNEMONIC:-"test test test test test test test test test test test junk"}
 ARG FORK_URL
